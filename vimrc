@@ -35,6 +35,7 @@ function Clipbrd_init()
     only
     set fo=
     set spell
+    set wrap linebreak
     noremap j gj
     noremap k gk
     noremap 0 g0
