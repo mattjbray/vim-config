@@ -31,7 +31,7 @@ set completeopt+=longest
 autocmd FileType python set foldmethod=indent
 
 " Things to call when Clipbrd is used
-function Clipbrd_init()
+function! Clipbrd_init()
     only
     set fo=
     set spell
@@ -41,3 +41,11 @@ function Clipbrd_init()
     noremap 0 g0
     noremap $ g$
 endfunction
+
+" NetRW
+let g:netrw_list_hide= '\.swp,\.pyc'
+let g:netrw_liststyle= 3
+
+" FuzzyFinder
+noremap <F4> :FufFile **/<CR>
+noremap <C-F4> :FufFileWithCurrentBufferDir **/<CR>
