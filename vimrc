@@ -15,6 +15,8 @@ set ts=4 sts=4 sw=4 expandtab
 colorscheme desertmod
 
 if has('win32')
+    set columns=120
+    set lines=50
     set gfn=Consolas:h9:cANSI
 endif
 
