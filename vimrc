@@ -27,3 +27,14 @@ set completeopt+=longest
 
 " Python
 autocmd FileType python set foldmethod=indent
+
+" Things to call when Clipbrd is used
+function Clipbrd_init()
+    only
+    set fo=
+    set spell
+    noremap j gj
+    noremap k gk
+    noremap 0 g0
+    noremap $ g$
+endfunction
