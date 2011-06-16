@@ -11,6 +11,13 @@ set number
 
 set ts=4 sts=4 sw=4 expandtab
 
+"Styles, fonts and colourschemes
+colorscheme desertmod
+
+if has('win32')
+    set gfn=Consolas:h9:cANSI
+endif
+
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
