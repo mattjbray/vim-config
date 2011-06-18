@@ -1,1 +1,2 @@
-bundle/matchit/doc/tags
+bundle/*/doc/tags
+.netrwhist
