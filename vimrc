@@ -47,5 +47,7 @@ let g:netrw_list_hide= '\.swp,\.pyc'
 let g:netrw_liststyle= 3
 
 " FuzzyFinder
-noremap <F4> :FufFile<CR>
-noremap <C-F4> :FufFileWithCurrentBufferDir **/<CR>
+noremap <F4> :FufFileWithCurrentBufferDir<CR>
+
+" NERDTree
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
