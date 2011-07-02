@@ -51,3 +51,4 @@ noremap <F4> :FufFileWithCurrentBufferDir<CR>
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+noremap <F2> :NERDTree<CR>
