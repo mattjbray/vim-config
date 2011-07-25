@@ -30,6 +30,9 @@ set completeopt+=longest
 " Python
 autocmd FileType python set foldmethod=indent
 
+" Disable pyflakes quickfix window
+let g:pyflakes_use_quickfix= 0
+
 " Things to call when Clipbrd is used
 function! Clipbrd_init()
     only
