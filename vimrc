@@ -20,6 +20,10 @@ if has('win32')
     set gfn=Consolas:h9:cANSI
 endif
 
+" Key mappings
+nnoremap <C-j> gt
+nnoremap <C-k> gT
+
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
