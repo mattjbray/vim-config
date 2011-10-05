@@ -61,3 +61,6 @@ noremap \b :FufBuffer<CR>
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 noremap <F2> :NERDTree<CR>
+
+" Autodelete hidden fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
