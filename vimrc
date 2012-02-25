@@ -9,7 +9,7 @@ syntax on
 set hidden
 set number
 
-set ts=4 sts=4 sw=4 expandtab
+set ts=2 sts=2 sw=2 expandtab
 
 "Styles, fonts and colourschemes
 colorscheme desertmod
