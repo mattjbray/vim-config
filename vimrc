@@ -57,6 +57,7 @@ let g:netrw_liststyle= 3
 noremap \f :FufFile<CR>
 noremap \F :FufFileWithCurrentBufferDir<CR>
 noremap \b :FufBuffer<CR>
+noremap \r :FufRenewCache<CR>
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
