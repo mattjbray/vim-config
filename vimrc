@@ -39,6 +39,9 @@ set completeopt+=longest
 " Python
 autocmd FileType python set foldmethod=indent
 
+" Ruby
+autocmd FileType ruby,eruby set foldmethod=indent
+
 " Disable pyflakes quickfix window
 let g:pyflakes_use_quickfix= 0
 
