@@ -32,7 +32,7 @@ nnoremap <C-k> gT
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
-set background=dark
+set background=light
 
 set completeopt+=longest
 
