@@ -1,6 +1,5 @@
 " Pathogen
-call pathogen#runtime_append_all_bundles() 
-call pathogen#helptags() 
+call pathogen#infect() 
 
 set nocompatible
 filetype plugin indent on
