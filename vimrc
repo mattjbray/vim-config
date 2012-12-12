@@ -11,7 +11,8 @@ set number
 set ts=2 sts=2 sw=2 expandtab
 
 "Styles, fonts and colourschemes
-colorscheme desertmod
+set background=dark
+colorscheme solarized
 
 if has('win32')
     set columns=120
@@ -30,8 +31,6 @@ nnoremap <C-k> gT
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
-
-set background=light
 
 set completeopt+=longest
 
