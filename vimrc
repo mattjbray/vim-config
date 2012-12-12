@@ -12,6 +12,7 @@ set ts=2 sts=2 sw=2 expandtab
 
 "Styles, fonts and colourschemes
 set background=dark
+let g:solarized_termtrans=1
 colorscheme solarized
 
 if has('win32')
