@@ -13,10 +13,11 @@ set number
 
 set ts=2 sts=2 sw=2 expandtab
 
-"Styles, fonts and colourschemes
+" Styles, fonts and colourschemes
 set background=dark
 let g:solarized_termtrans=1
 colorscheme solarized
+set colorcolumn=80 " highlight the 80th column
 
 if has('win32')
     set columns=120
