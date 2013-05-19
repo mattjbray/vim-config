@@ -77,7 +77,7 @@ noremap \r :FufRenewCache<CR>
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-noremap <F2> :NERDTreeToggle<CR>
+noremap \t :NERDTreeToggle<CR>
 
 " Autodelete hidden fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
