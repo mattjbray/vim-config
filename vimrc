@@ -44,9 +44,6 @@ nnoremap <F5> :GundoToggle<CR>
 
 set completeopt+=longest
 
-" Python
-autocmd FileType python set foldmethod=indent
-
 " Ruby
 autocmd FileType ruby,eruby set foldmethod=indent
 
