@@ -1,5 +1,5 @@
 " Reload vimrc on write
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost *vimrc source %
 
 " Pathogen
 call pathogen#infect() 
