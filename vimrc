@@ -28,11 +28,16 @@ endif
 " Hide the toolbar in gui
 if has('gui_running')
   set guioptions=-t
+  set guifont=Menlo\ Regular:h14
 end
 
 " Key mappings
 nnoremap <C-j> gt
 nnoremap <C-k> gT
+
+" Keep selection after indent
+vnoremap < <gv
+vnoremap > >gv
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
