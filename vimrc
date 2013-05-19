@@ -70,19 +70,19 @@ let g:netrw_list_hide= '\.swp,\.pyc'
 let g:netrw_liststyle= 3
 
 " FuzzyFinder
-noremap \f :FufFile<CR>
-noremap \F :FufFileWithCurrentBufferDir<CR>
-noremap \b :FufBuffer<CR>
-noremap \r :FufRenewCache<CR>
+noremap <leader>f :FufFile<CR>
+noremap <leader>F :FufFileWithCurrentBufferDir<CR>
+noremap <leader>b :FufBuffer<CR>
+noremap <leader>r :FufRenewCache<CR>
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-noremap \t :NERDTreeToggle<CR>
+noremap <leader>t :NERDTreeToggle<CR>
 
 " Autodelete hidden fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-noremap \gc :Gcommit<CR>
-noremap \gd :Gdiff<CR>
-noremap \gs :Gstatus<CR>
-noremap \gw :Gwrite<CR>
+noremap <leader>gc :Gcommit<CR>
+noremap <leader>gd :Gdiff<CR>
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gw :Gwrite<CR>
