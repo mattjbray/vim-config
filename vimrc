@@ -28,7 +28,7 @@ endif
 " Hide the toolbar in gui
 if has('gui_running')
   set guioptions=-t
-  set guifont=Menlo\ Regular:h14
+  set guifont=Menlo\ Regular\ for\ Powerline:h14
 end
 
 " Key mappings
@@ -86,3 +86,8 @@ noremap <leader>gc :Gcommit<CR>
 noremap <leader>gd :Gdiff<CR>
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gw :Gwrite<CR>
+
+" Powerline
+source ~/.vim/bundle/powerline/powerline/bindings/vim/plugin/powerline.vim
+set laststatus=2
+set encoding=utf-8
