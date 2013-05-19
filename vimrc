@@ -82,6 +82,7 @@ noremap <F2> :NERDTreeToggle<CR>
 " Autodelete hidden fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
+noremap \gc :Gcommit<CR>
+noremap \gd :Gdiff<CR>
 noremap \gs :Gstatus<CR>
 noremap \gw :Gwrite<CR>
-noremap \gc :Gcommit<CR>
