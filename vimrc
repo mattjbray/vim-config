@@ -1,3 +1,6 @@
+" Reload vimrc on write
+autocmd! bufwritepost *vimrc source %
+
 " Pathogen
 call pathogen#infect() 
 
@@ -10,10 +13,11 @@ set number
 
 set ts=2 sts=2 sw=2 expandtab
 
-"Styles, fonts and colourschemes
+" Styles, fonts and colourschemes
 set background=dark
 let g:solarized_termtrans=1
 colorscheme solarized
+set colorcolumn=80 " highlight the 80th column
 
 if has('win32')
     set columns=120
@@ -24,19 +28,21 @@ endif
 " Hide the toolbar in gui
 if has('gui_running')
   set guioptions=-t
+  set guifont=Menlo\ Regular\ for\ Powerline:h14
 end
 
 " Key mappings
 nnoremap <C-j> gt
 nnoremap <C-k> gT
 
+" Keep selection after indent
+vnoremap < <gv
+vnoremap > >gv
+
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
 set completeopt+=longest
-
-" Python
-autocmd FileType python set foldmethod=indent
 
 " Ruby
 autocmd FileType ruby,eruby set foldmethod=indent
@@ -61,18 +67,24 @@ let g:netrw_list_hide= '\.swp,\.pyc'
 let g:netrw_liststyle= 3
 
 " FuzzyFinder
-noremap \f :FufFile<CR>
-noremap \F :FufFileWithCurrentBufferDir<CR>
-noremap \b :FufBuffer<CR>
-noremap \r :FufRenewCache<CR>
+noremap <leader>f :FufFile<CR>
+noremap <leader>F :FufFileWithCurrentBufferDir<CR>
+noremap <leader>b :FufBuffer<CR>
+noremap <leader>r :FufRenewCache<CR>
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-noremap <F2> :NERDTreeToggle<CR>
+noremap <leader>t :NERDTreeToggle<CR>
 
 " Autodelete hidden fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-noremap \gs :Gstatus<CR>
-noremap \gw :Gwrite<CR>
-noremap \gc :Gcommit<CR>
+noremap <leader>gc :Gcommit<CR>
+noremap <leader>gd :Gdiff<CR>
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gw :Gwrite<CR>
+
+" Powerline
+source ~/.vim/bundle/powerline/powerline/bindings/vim/plugin/powerline.vim
+set laststatus=2
+set encoding=utf-8
